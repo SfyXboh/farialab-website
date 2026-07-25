@@ -160,6 +160,30 @@ button {
     visibility: visible;
 }
 
+.content-section .carousel .prev {
+    grid-column: 1;
+    grid-row: 1;
+    width: 10%;
+    margin-left: 0;
+    opacity: 0;
+}
+
+.content-section .carousel .prev:hover {
+    opacity: 1;
+}
+
+.content-section .carousel .next {
+    grid-column: 1;
+    grid-row: 1;
+    width: 10%;
+    margin-left: auto;
+    opacity: 0;
+}
+
+.content-section .carousel .next:hover {
+    opacity: 1;
+}
+
 .content-section .carousel .caption {
     grid-column: 1;
     grid-row: 2;
@@ -288,6 +312,12 @@ footer {
 
     .content-section .carousel .slide {
         justify-self: center;
+    }
+
+    .content-section .carousel .prev,
+    .content-section .carousel .next {
+        width: 20%;
+        opacity: 1;
     }
 
     .content-section .carousel .dots{
