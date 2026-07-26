@@ -1,15 +1,17 @@
 :root {
-    --primary-blue: #0c71c3;
     --heritage-blue: #002D72;
-    --accent-teal: #7EBEC5;
-    --accent-orange: #ffb342;
-    --accent-pink: #fa546d;
+    --medium-blue: #0077D8;
+    --spirit-blue: #68ACE5;
+    --gold: #F1C400;
+    --salmon: #E8927C;
+    --sable: #31261D;
+    --double-black: #000000;
 }
 
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    color: #333;
+    color: var(--sable);
 }
 
 h1,
@@ -45,7 +47,7 @@ button {
     font-size: 28px;
     background: none;
     border: none;
-    color: var(--primary-blue);
+    color: var(--medium-blue);
     cursor: pointer;
 }
 
@@ -72,7 +74,7 @@ button {
 .site-header nav * {
     padding: 0 10px;
     text-decoration: none;
-    color: #333;
+    color: var(--sable);
 }
 
 .site-header * {
@@ -131,7 +133,7 @@ button {
 }
 
 .content-section h4 {
-    color: var(--accent-orange);
+    color: var(--gold);
 }
 
 .content-section .research-area {
@@ -221,7 +223,7 @@ button {
 }
 
 .dot.show {
-    background-color: #2e2e2e;
+    background-color: var(--sable);
 }
 
 .content-section .research-text {
@@ -239,6 +241,7 @@ button {
         url('images/Kyle_Paper_Lt-scaled.jpg');
     background-size: cover;
     padding: 100px 10%;
+    margin: 0;
     max-width: 1200px;
     text-align: left;
 }
@@ -246,7 +249,7 @@ button {
 .contact .contact-icon {
     font-size: 48px;
     color: white;
-    background: var(--primary-blue);
+    background: var(--medium-blue);
     width: 100px;
     height: 100px;
     line-height: 100px;   /* vertically centers the character inside the circle */
@@ -265,28 +268,50 @@ button {
 
 .contact .contact-container .contact-text {
     width: auto;
+    color: var(--heritage-blue);
 }
 
 .contact h1 {
     color: white;
 }
 
-.contact 
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    color: var(--heritage-blue);
+.contact .contact-link {
+    color: white;
 }
 
-
 footer {
-    text-align: center;
-    padding: 30px;
-    background: #f5f5f5;
-    color: #666;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+}
+
+footer .subfooter {
+    margin: 0;
+    background-color: #222222;
+    color: white;
+    padding: 50px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer {
+    background-color: #171717;
+    padding: 10px 10%;
+}
+
+footer .subfooter p,
+footer .footer p {
+    margin: 0;
+}
+
+footer .subfooter a,
+footer .footer a {
+    color: white;
+}
+
+footer img {
+    max-width: 20%;
 }
 
 @media (max-width: 1000px) {
@@ -355,7 +380,7 @@ footer {
     hr {
         width: 80%;
         margin: 40px auto;
-        color: var(--accent-teal);
+        color: var(--spirit-blue);
     }
 
     .hero {
