@@ -1,5 +1,6 @@
 :root {
-    --primary-blue: #0C71C3;
+    --primary-blue: #0c71c3;
+    --heritage-blue: #002D72;
     --accent-teal: #7EBEC5;
     --accent-orange: #ffb342;
     --accent-pink: #fa546d;
@@ -228,6 +229,58 @@ button {
     height: auto;
     padding: 0 20px;
 }
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top right, rgba(1, 77, 183, 0.5) 0%, rgba(255, 255, 255, 0) 100%),
+        url('images/Kyle_Paper_Lt-scaled.jpg');
+    background-size: cover;
+    padding: 100px 10%;
+    max-width: 1200px;
+    text-align: left;
+}
+
+.contact .contact-icon {
+    font-size: 48px;
+    color: white;
+    background: var(--primary-blue);
+    width: 100px;
+    height: 100px;
+    line-height: 100px;   /* vertically centers the character inside the circle */
+    text-align: center;
+    border-radius: 50%;    /* square -> circle */
+    margin-right: auto;
+}
+
+.contact .contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    width: 100%;
+    text-align: left;
+}
+
+.contact .contact-container .contact-text {
+    width: auto;
+}
+
+.contact h1 {
+    color: white;
+}
+
+.contact 
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: var(--heritage-blue);
+}
+
 
 footer {
     text-align: center;
