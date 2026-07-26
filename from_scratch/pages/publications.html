@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Faria Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <img src="../images/logobanner-01.png" alt="Faria Lab" class="logo">
+
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+
+        <nav>
+            <a href="../index.html">Welcome</a>
+            <a href="../pages/people.html">People</a>
+            <a href="../pages/publications.html" class="current">Publications & Resources</a>
+            <button class="search-toggle" aria-label="Toggle search">🔎︎</button>
+        </nav>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-input">
+            <button class="search-toggle" aria-label="Toggle search">✕</button>
+        </div>
+    </header>
+
+    <section id="welcome" class="hero">
+        <img src="../images/logobanner-02-1.png" alt="Faria Lab" class="logo">
+        <div class="hero-text">
+            <h4>WELCOME TO</h4>
+            <h1>the Faria Lab</h1>
+            <p>Our lab uses MRI to investigate brain organization and function. We develop and apply methods for
+                processing and analyzing diverse MRI modalities in order to characterize distinctive brain patterns and
+                to study conditions that include neurodegenerative diseases, psychiatric disorders, and stroke. We
+                develop tools for brain MRI segmentation and quantification, promoting the means to perform reliable and
+                reproducible translational research. We are involved with the creation of multiple electronic brain
+                atlases and tools, extensively used by the neuroimaging community. Our work involves BigData and
+                high-throughput analysis, by applying artificial intelligence to retrieve latent features that
+                characterize diverse clinical conditions.</p>
+        </div>
+    </section>
+
+    <section id="resources" class="content-section">
+        <h1>Resources</h1>
+
+        <div class="resources">
+            <div class="carousel" id="carousel1">
+                <img src="images/research1_SWI.png" alt="Research 1 SWI" class="slide show">
+                <img src="images/research1_atlas.png" alt="Research 1 Atlas" class="slide">
+                <img src="images/ArterialAtlas.png" alt="Research 1 Arterial Atlas" class="slide">
+
+                <button class="prev" aria-label="Previous slide">&#10094;</button>
+                <button class="next" aria-label="Next slide">&#10095;</button>
+
+                <p class="caption show">Atlas of the basal ganglia based on susceptibility weighted imaging</p>
+                <p class="caption">MRI based atlas of structural anatomy</p>
+                <p class="caption">Digital atlas of vascular territories</p>
+
+                <div class="dots">
+                    <span class="dot show"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+            <div class="resources-container">
+                <h3>Brain MRI Atlases</h3>
+
+                <p>We are involved with the creation of multiple electronic brain atlases, extensively used by the
+                    neuroimaging community. In addition to the educational propose, these atlases allow the
+                    quantification of multiple contrasts and MRI properties per anatomical structure, facilitating the
+                    translation and interpretation of the results. <a
+                        href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2586008/" target="_blank" rel="noopener">We
+                        published the first white matter atlas</a>, which was adopted by major software, such as FSL, 3D
+                    Slicer and MRICron. We then created <a href="https://pubmed.ncbi.nlm.nih.gov/23769915"
+                        target="_blank" rel="noopener">the first digital atlas of deep gray matter structures based on
+                        susceptibility weighted images</a>, later extending the effort to <a
+                        href="https://pubmed.ncbi.nlm.nih.gov/30738207" target="_blank"
+                        rel="noopener">multi-atlases</a>. We also created the first digital, 3D, <a
+                        href="https://www.biorxiv.org/content/10.1101/2021.05.03.442478v1.abstract" target="_blank"
+                        rel="noopener">deformable atlas of brain arterial territories</a> based on lesion distributions
+                    in more than a thousand stroke lesions, freely downloadable at <a
+                        href="https://www.nitrc.org/projects/arterialatlas" target="_blank"
+                        rel="noopener">https://www.nitrc.org/projects/arterialatlas</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-icon">
+            &#9993;
+        </div>
+
+        <div class="contact-container">
+            <h1>Contact</h1>
+        </div>
+    
+        <div class="contact-container">
+            <div class="contact-text">
+                <h4>Andreia Vasconcellos Faria, MD, PhD</h4>
+                <p>Associate Professor of Radiology
+                    <br>
+                    Johns Hopkins University, School of Medicine
+                </p>
+            </div>
+
+            <div class="contact-text">
+                <p>217 B Traylor Building
+                    <br>
+                    720 Rutland Ave
+                    <br>
+                    Baltimore, MD, 21205</p>
+
+                <p><strong>Phone:</strong> <a href="tel:+14109554215" aria-label="Call us" class="contact-link">(410) 955-4215</a></p>
+
+                <p><strong>Email:</strong> <a href="mailto:afaria1@jhmi.edu" aria-label="Email us" class="contact-link">afaria1@jhmi.edu</a></p>
+            </div>
+        </div>
+
+        
+    </section>
+
+    <footer>
+        <div class="subfooter">
+            <div class="subfooter-text">
+                <p><strong>The Faria Lab</strong>
+                    <br>
+                    Johns Hopkins University
+                    <br>
+                    217 B Traylor Building
+                    <br>
+                    720 Rutland Ave, Baltimore, MD, 21205
+                    <br>
+                    Phone: <a href="tel:+14109554215" aria-label="Call us" class="contact-link">(410) 955-4215</a>
+                    <br>
+                    Email: <a href="mailto:afaria1@jhmi.edu" aria-label="Email us" class="contact-link">afaria1@jhmi.edu</a></p>
+            </div>
+
+            <img src="../images/logos-02-300x182.png" alt="logo" class="logo">
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 Faria Lab</p>
+        </div>
+    </footer>
+
+
+
+    <script src="../scripts/menu.js"></script>
+    <script src="../scripts/carousel.js"></script>
+</body>
+
+</html>

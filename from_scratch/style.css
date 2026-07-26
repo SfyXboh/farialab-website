@@ -144,7 +144,8 @@ button {
     color: var(--gold);
 }
 
-.content-section .research-area {
+.content-section .research-area,
+.content-section .person {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -234,8 +235,26 @@ button {
     background-color: var(--sable);
 }
 
+.content-section .portrait {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.content-section .portrait img {
+    width: 100%;
+    border-radius: 5%;
+}
+
 .content-section .research-text {
     width: 60%;
+    height: auto;
+    padding: 0 20px;
+}
+
+.content-section .person-text {
+    width: 70%;
     height: auto;
     padding: 0 20px;
 }
@@ -422,6 +441,10 @@ footer img {
     .content-section .research-text {
         width: 100%;
         padding: 20px 0;
+    }
+
+    .content-section .portrait {
+        width: 80%;
     }
 
     footer img {
