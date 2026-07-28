@@ -156,12 +156,13 @@ button {
 .content-section .carousel {
     display: grid;
     width: 40%;
-    grid-template-columns: minmax(0, 1fr);  /* allow grid to shrink below content size */
 }
 
 .content-section .carousel .slide {
     grid-column: 1;
     grid-row: 1;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);  /* allow grid to shrink below content size */
     width: 100%;
     opacity: 0;
     visibility: hidden;
@@ -171,6 +172,20 @@ button {
 .content-section .carousel .slide.show {
     opacity: 1;
     visibility: visible;
+}
+
+.content-section .carousel .slide .slide-fig {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+}
+
+.content-section .carousel .slide .caption {
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
 }
 
 .content-section .carousel .prev {
@@ -197,22 +212,6 @@ button {
 
 .content-section .carousel .next:hover {
     opacity: 1;
-}
-
-.content-section .carousel .caption {
-    grid-column: 1;
-    grid-row: 2;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease-in-out;
-}
-
-.content-section .carousel .caption.show {  
-    opacity: 1;
-    visibility: visible;
 }
 
 /* The dots/bullets/indicators */
