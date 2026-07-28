@@ -145,7 +145,8 @@ button {
 }
 
 .content-section .research-area,
-.content-section .person {
+.content-section .person,
+.content-section .resources {
     display: flex;
     justify-content: space-between;
     align-items: center;
