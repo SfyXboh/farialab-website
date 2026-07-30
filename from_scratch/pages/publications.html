@@ -52,20 +52,24 @@
 
         <div class="resources">
             <div class="carousel" id="carousel1">
-                <img src="../images/publications_neuroreport-cover.jpg" alt="publications 1 NeuroReport" class="slide show">
-                <img src="../images/publications_neuroimage_cover.png" alt="publications 2 NeuroImage" class="slide">
-                <img src="../images/featured_ntric2.png" alt="publications 3 Nitric2" class="slide">
-                <img src="../images/featured_ntric.png" alt="publications 4 Nitric" class="slide">
-                <img src="../images/featured_nat.png" alt="publications 5 Nature" class="slide">
+                <div class="slide show">
+                    <img class="slide-fig" src="../images/publications_neuroreport-cover.jpg" alt="publications 1 NeuroReport">
+                </div>
+                <div class="slide">
+                    <img class="slide-fig" src="../images/publications_neuroimage_cover.png" alt="publications 2 NeuroImage">
+                </div>
+                <div class="slide">
+                    <img class="slide-fig" src="../images/featured_ntric2.png" alt="publications 3 Nitric2">
+                </div>
+                <div class="slide">
+                    <img class="slide-fig" src="../images/featured_ntric.png" alt="publications 4 Nitric">
+                </div>
+                <div class="slide">
+                    <img class="slide-fig" src="../images/featured_nat.png" alt="publications 5 Nature">
+                </div>
 
                 <button class="prev" aria-label="Previous slide">&#10094;</button>
                 <button class="next" aria-label="Next slide">&#10095;</button>
-
-                <p class="caption show"></p>
-                <p class="caption"></p>
-                <p class="caption"></p>
-                <p class="caption"></p>
-                <p class="caption"></p>
 
                 <div class="dots">
                     <span class="dot show"></span>
@@ -77,24 +81,21 @@
             </div>
 
             <div class="resources-container">
-                <h3>Brain MRI Atlases</h3>
+                <a href="https://www.nitrc.org/projects/arterialatlas" target="_blank" rel="noopener">
+                    <img class="resources-fig" src="../images/ArterialAtlas2D.png" alt="Resourses 1 Arterial Atlas 2D">
+                </a>
 
-                <p>We are involved with the creation of multiple electronic brain atlases, extensively used by the
-                    neuroimaging community. In addition to the educational propose, these atlases allow the
-                    quantification of multiple contrasts and MRI properties per anatomical structure, facilitating the
-                    translation and interpretation of the results. <a
-                        href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2586008/" target="_blank" rel="noopener">We
-                        published the first white matter atlas</a>, which was adopted by major software, such as FSL, 3D
-                    Slicer and MRICron. We then created <a href="https://pubmed.ncbi.nlm.nih.gov/23769915"
-                        target="_blank" rel="noopener">the first digital atlas of deep gray matter structures based on
-                        susceptibility weighted images</a>, later extending the effort to <a
-                        href="https://pubmed.ncbi.nlm.nih.gov/30738207" target="_blank"
-                        rel="noopener">multi-atlases</a>. We also created the first digital, 3D, <a
-                        href="https://www.biorxiv.org/content/10.1101/2021.05.03.442478v1.abstract" target="_blank"
-                        rel="noopener">deformable atlas of brain arterial territories</a> based on lesion distributions
-                    in more than a thousand stroke lesions, freely downloadable at <a
-                        href="https://www.nitrc.org/projects/arterialatlas" target="_blank"
-                        rel="noopener">https://www.nitrc.org/projects/arterialatlas</a>.</p>
+                <h3>Atlas of brain arterial territories</h3>
+
+                <p>The <a href="https://www.nitrc.org/projects/arterialatlas" target="_blank" rel="noopener">atlas of brain arterial territories</a> based on lesion distributions in 1,298 acute stroke patients. The atlas covers supra- and infra-tentorial regions and contains hierarchical segmentation levels created by a fusion of vascular and classical anatomical criteria. This deformable 3D digital atlas can be readily used by the clinical and research communities, enabling automatic and highly reproducible exploration of large-scaled data</p>
+                
+                <a href="https://www.nitrc.org/projects/ads" target="_blank" rel="noopener">
+                    <img class="resources-fig" src="../images/research4publications_ADS.gif" alt="Resourses 2 ADS">
+                </a>
+
+                <h3>Acute-stroke Detection Segmentation (ADS)</h3>
+
+                <p>The Acute-stroke Detection Segmentation (<a href="https://www.nitrc.org/projects/ads" target="_blank" rel="noopener">ADS</a>) is a tool for detection and segmentation of ischemic acute and sub-acute strokes in brain diffusion weighted MRIs. The deep learning networks were trained and tested on a large dataset of 2,348 clinical images, and further tested on 280 images of an external dataset. Our proposed model outperformed generic nets and patch-wise approaches, particularly in small lesions, with lower false positive rate, balanced precision and sensitivity, and robustness to data perturbs (artefacts). The agreement with human delineation rivaled the inter-evaluator agreement. The method has minimal computational requirements and is fast: the lesion inference takes 20~30 seconds in CPU and the total processing, including registration and generation of results/report takes ~ 2.5 mins. The outputs, provided with a single command line, are: the predicted lesion mask, the lesion mask and the image inputs (DWI, B0, ADC) in standard space, MNI, and the quantification of the lesion per brain structure and per vascular territory.</p>
             </div>
         </div>
     </section>

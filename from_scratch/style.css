@@ -247,7 +247,9 @@ button {
     border-radius: 5%;
 }
 
-.content-section .research-text {
+.content-section .research-text,
+.content-section .resources-container {
+    display: block;
     width: 60%;
     height: auto;
     padding: 0 20px;
@@ -257,6 +259,10 @@ button {
     width: 70%;
     height: auto;
     padding: 0 20px;
+}
+
+.content-section .resources-container img {
+    width: 100%;
 }
 
 .contact {

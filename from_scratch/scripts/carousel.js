@@ -39,7 +39,7 @@ for (let c = 0; c < carousels.length; c++) {
     let next = carousels[c].querySelector('.next');
 
     /* auto next */
-    setInterval(() => showNext(slides, dots, currentslides, c), 10000);
+    setInterval(() => showNext(slides, dots, currentslides, c), 15000);
 
     /*manual next and previous buttons */
     prev.addEventListener('click', () => showPrev(slides, dots, currentslides, c));
