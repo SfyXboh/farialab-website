@@ -20,8 +20,8 @@
 
         <nav>
             <a href="../index.html">Welcome</a>
-            <a href="../pages/people.html">People</a>
-            <a href="../pages/publications.html" class="current">Publications & Resources</a>
+            <a href="people.html">People</a>
+            <a href="publications.html" class="current">Publications & Resources</a>
             <button class="search-toggle" aria-label="Toggle search">🔎︎</button>
         </nav>
 
@@ -81,21 +81,41 @@
             </div>
 
             <div class="resources-container">
-                <a href="https://www.nitrc.org/projects/arterialatlas" target="_blank" rel="noopener">
-                    <img class="resources-fig" src="../images/ArterialAtlas2D.png" alt="Resourses 1 Arterial Atlas 2D">
-                </a>
+                <div class="resources-img">
+                    <a href="https://www.nitrc.org/projects/arterialatlas" target="_blank" rel="noopener">
+                        <img class="resources-fig" src="../images/ArterialAtlas2D.png" alt="Resourses 1 Arterial Atlas 2D">
+                    </a>
+                </div>
 
                 <h3>Atlas of brain arterial territories</h3>
 
                 <p>The <a href="https://www.nitrc.org/projects/arterialatlas" target="_blank" rel="noopener">atlas of brain arterial territories</a> based on lesion distributions in 1,298 acute stroke patients. The atlas covers supra- and infra-tentorial regions and contains hierarchical segmentation levels created by a fusion of vascular and classical anatomical criteria. This deformable 3D digital atlas can be readily used by the clinical and research communities, enabling automatic and highly reproducible exploration of large-scaled data</p>
                 
-                <a href="https://www.nitrc.org/projects/ads" target="_blank" rel="noopener">
-                    <img class="resources-fig" src="../images/research4publications_ADS.gif" alt="Resourses 2 ADS">
-                </a>
+                <div class="resources-img">
+                    <a href="https://www.nitrc.org/projects/ads" target="_blank" rel="noopener">
+                        <img class="resources-fig" src="../images/research4publications_ADS.gif" alt="Resourses 2 ADS">
+                    </a>
+                </div>
 
                 <h3>Acute-stroke Detection Segmentation (ADS)</h3>
 
                 <p>The Acute-stroke Detection Segmentation (<a href="https://www.nitrc.org/projects/ads" target="_blank" rel="noopener">ADS</a>) is a tool for detection and segmentation of ischemic acute and sub-acute strokes in brain diffusion weighted MRIs. The deep learning networks were trained and tested on a large dataset of 2,348 clinical images, and further tested on 280 images of an external dataset. Our proposed model outperformed generic nets and patch-wise approaches, particularly in small lesions, with lower false positive rate, balanced precision and sensitivity, and robustness to data perturbs (artefacts). The agreement with human delineation rivaled the inter-evaluator agreement. The method has minimal computational requirements and is fast: the lesion inference takes 20~30 seconds in CPU and the total processing, including registration and generation of results/report takes ~ 2.5 mins. The outputs, provided with a single command line, are: the predicted lesion mask, the lesion mask and the image inputs (DWI, B0, ADC) in standard space, MNI, and the quantification of the lesion per brain structure and per vascular territory.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications" class="content-section">
+        <div class="publications">
+            <div class="publications-container left">
+                <h3>Selected</h3>
+                <h1>Publications</h1>
+            </div>
+
+            <div class="publications-container right">
+                <h3>LINKS TO FARIA PAPERS</h3>
+                <a href="https://scholar.google.com/citations?hl=en&amp;user=r8kbMWsAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener">
+                    Google Scholar
+                </a>
             </div>
         </div>
     </section>
@@ -130,7 +150,6 @@
                 <p><strong>Email:</strong> <a href="mailto:afaria1@jhmi.edu" aria-label="Email us" class="contact-link">afaria1@jhmi.edu</a></p>
             </div>
         </div>
-
         
     </section>
 

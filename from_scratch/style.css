@@ -146,11 +146,17 @@ button {
 
 .content-section .research-area,
 .content-section .person,
-.content-section .resources {
+.content-section .resources,
+.content-section .publications {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+}
+
+.content-section .publications {
+    align-items: top;
+    padding: 20px 0 100px 0;
 }
 
 #resources {
@@ -159,9 +165,21 @@ button {
     margin: 0;
 }
 
-#resources h1 {
+#publications {
+    background-color: #0C4A7C;
+    background-size: cover;
+    color: white;
     margin: 0;
-    padding: 20px;
+}
+
+#resources h1{
+    margin: 0;
+    padding: 20px 0;
+}
+
+#publications h1 {
+    margin: 0;
+    padding: 0;
 }
 
 .content-section .carousel {
@@ -259,11 +277,18 @@ button {
 }
 
 .content-section .research-text,
-.content-section .resources-container {
+.content-section .resources-container,
+.content-section .publications-container {
     display: block;
     width: 60%;
     height: auto;
     padding: 0 20px;
+}
+
+.content-section .publications-container.left {
+    width: 40%;
+    padding: 0 0 0 20px;
+    box-sizing: border-box;
 }
 
 .content-section .person-text {
@@ -405,6 +430,7 @@ footer img {
     .site-header nav.open {
         display: flex;
         /* show nav links when menu is open */
+        z-index: 1000;
     }
 
     .site-header nav.hide {
@@ -455,13 +481,33 @@ footer img {
         flex-direction: row;
     }
 
-    .content-section .research-text {
+    .content-section .research-text,
+    .content-section .person-text,
+    .content-section .resources-container,
+    .content-section .publications-container {
         width: 100%;
         padding: 20px 0;
     }
 
     .content-section .portrait {
         width: 80%;
+    }
+
+    .content-section .resources-container .resources-img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .content-section .resources-container img {
+        width: 100%;
+    }
+
+    .content-section .publications-container.left {
+        width: 100%;
+        padding: 20px 0;
     }
 
     footer img {
