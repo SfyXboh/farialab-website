@@ -159,17 +159,26 @@ button {
     padding: 20px 0 100px 0;
 }
 
-#resources {
-    background-color: #EDEFFA;
-    background-size: cover;
+.bg {
+    width: 100%;
     margin: 0;
+    background-size: cover;
 }
 
-#publications {
+#resources-bg {
+    background-color: #EDEFFA;
+}
+
+#publications-bg {
     background-color: #0C4A7C;
-    background-size: cover;
     color: white;
+}
+
+#resources,
+#publications {
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #resources h1{
