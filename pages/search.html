@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Faria Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" href="../images/cropped-logobanner-02-1-32x32.png">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <img src="../images/logobanner-01.png" alt="Faria Lab" class="logo">
+
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+
+        <nav>
+            <a href="../index.html">Welcome</a>
+            <a href="people.html">People</a>
+            <a href="publications.html">Publications & Resources</a>
+            <button class="search-toggle" aria-label="Toggle search">🔎︎</button>
+        </nav>
+
+        <form class="search-container" action="search.html" method="get">
+            <input type="text" placeholder="Search..." class="search-input" name="q">
+            <button class="search-toggle" aria-label="Toggle search">✕</button>
+        </form>
+    </header>
+
+    <section id="search-results" class="content-section">
+        <div class="results">
+            <h1>Search Results</h1>
+
+            <div class="result-item"></div>
+        </div>
+
+        <aside class="search-sidebar">
+            <form action="search.html" method="get" class="search-box">
+                <input id="search-input" type="text" name="q" placeholder="Search" />
+                <button type="submit">Search</button>
+            </form>
+        </aside>
+    </section>
+
+    <footer>
+        <div class="subfooter">
+            <div class="subfooter-text">
+                <p><strong>The Faria Lab</strong>
+                    <br>
+                    Johns Hopkins University
+                    <br>
+                    217 B Traylor Building
+                    <br>
+                    720 Rutland Ave, Baltimore, MD, 21205
+                    <br>
+                    Phone: <a href="tel:+14109554215" aria-label="Call us" class="contact-link">(410) 955-4215</a>
+                    <br>
+                    Email: <a href="mailto:afaria1@jhmi.edu" aria-label="Email us" class="contact-link">afaria1@jhmi.edu</a></p>
+            </div>
+
+            <img src="../images/logos-02-300x182.png" alt="logo" class="logo">
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 Faria Lab</p>
+        </div>
+    </footer>
+
+
+
+    <script src="../scripts/menu.js"></script>
+    <script src="../scripts/search.js"></script>
+</body>
+
+</html>

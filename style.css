@@ -159,6 +159,12 @@ button {
     padding: 20px 0 100px 0;
 }
 
+#search-results {
+    margin-top: 0;
+    padding-top: 58px;
+    flex-direction: row;
+}
+
 .bg {
     width: 100%;
     margin: 0;
